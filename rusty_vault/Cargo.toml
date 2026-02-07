@@ -1,0 +1,12 @@
+[package]
+name = "rusty_vault"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes-gcm = "0.10"
+argon2 = "0.5"
+rand = "0.8"
+anyhow = "1.0" # For easy error handling
+clap = { version = "4.4", features = ["derive"] } # For the CLI
+zeroize = "1.7" # To wipe memory securely
